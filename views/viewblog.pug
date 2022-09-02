@@ -1,0 +1,11 @@
+extends base
+block content
+    if user
+        section.blog-container1
+            div= user.heading
+            div= user.paragraph 
+            .blog-card 
+                div.cardtype.blog-card1= user.cardView1
+                div.cardtype.blog-card2= user.cardView2
+                div.cardtype.blog-card3= user.cardView3 
+            div= user.paragraph2

@@ -1,0 +1,11 @@
+extends base
+block content 
+    - if (user.role === 'admin')
+        h1 You are Admin
+        h1 Sorry Due to Fever I can't proceed further (delete user =pending, get all user api done but proper view format pending)
+        a(href="/api/v1/user") GET ALL USER
+    - if (user.role === "user")
+        h1 Welcome To the world of Blog 
+            section.container-pop 
+                div 
+                    a(href="/createblog") Create A Blog Post

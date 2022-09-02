@@ -1,0 +1,33 @@
+extends base
+block content 
+    if user
+        section.signup_container 
+            div.label 
+                label(for="") Heading Of Blog: 
+            div.label 
+                input.form.form-inputA(type="text" value=`${user.heading}` size="80")
+            div.label 
+                label(for="") Paragraph Adding: 
+            div.label 
+                input.form.form-inputB(type="text" value=`${user.paragraph}` size="80")
+            div.label 
+                label(for="") CardView Add: 
+            div.label 
+                input.form.form-inputC(type="text" value=`${user.cardView1}` size="80")
+           
+            div.label 
+                label(for="") CardView Add: 
+            div.label 
+                input.form.form-inputD(type="text" value=`${user.cardView2}` size="80")
+            div.label 
+                label(for="") CardView Add: 
+            div.label 
+                input.form.form-inputE(type="text" value=`${user.cardView3}` size="80")
+            div.label 
+                label(for="") Paragraph: 
+            div.label 
+                input.form.form-inputF(type="text" value=`${user.paragraph}` size="80")
+            div 
+            button.submit1  Post A Blog 
+            div 
+            a(href="/viewblog") View Blog Post 

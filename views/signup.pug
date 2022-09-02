@@ -1,0 +1,26 @@
+extends base 
+
+block content 
+
+    h1.login-heading Signup To Account
+
+    section.signup_container 
+        div 
+            label.label.label-email(for="email") 📧 Email:
+        div 
+            input.input.email-input1(type="email")
+
+        div 
+            label.label.label-email(for="email") 🔑 Password:
+        div 
+            input.input.password-input1(type="password")
+        div 
+            label.label.label-email.confirm(for="email") 🔑 PasswordConfirm:
+        div 
+            input.input.password-input2(type="password")
+         
+        div 
+            //a.forget(href="#") FORGET PASSWORD 
+         
+        div.form1 
+            button.submit Submit
